@@ -3,3 +3,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #a8d0e6;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  padding: 25px 0 200px 30px;
+}
+
+.logo {
+  color: #ffffff;
+  cursor: default;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 27px;
+  padding: 8px 15px;
+  width: 500px;
+}
+
+.search-field {
+  height: 100%;
+  width: 100%;
+}
+
+.search-field input {
+  border: none;
+  height: 100%;
+  outline: 0;
+  width: 100%;
+  font-size: 18px;
+  color: #000000;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  width: 20px;
+  height: auto;
+}

@@ -24,8 +24,4 @@ const processJsonData = async (data) => {
 const displayCurrentWeather = async () => {
   const data = await getLocationWeather('London');
   const currentWeather = await processJsonData(data);
-
-  console.log(currentWeather);
 };
-
-displayCurrentWeather();
