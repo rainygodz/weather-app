@@ -29,28 +29,33 @@
       </div>
 
       <div class="weather-card">
-        <div class="icon">
-          <img src="./images/test.png" id="icon" />
-        </div>
-        <div class="temperature">
-          <h2 id="#temp">19</h2>
-          <div class="switch-units">
-            <div id="celcius" class="selected">°C</div>
-            |
-            <div id="fahrenheit">°F</div>
+        <div class="city-title">Current weather in City</div>
+
+        <div class="weather-cast">
+          <div class="icon">
+            <img src="./images/test.png" id="icon" />
+          </div>
+          <div class="temperature">
+            <h2 id="#temp">19</h2>
+            <div class="switch-units">
+              <div id="celcius" class="selected">°C</div>
+              |
+              <div id="fahrenheit">°F</div>
+            </div>
+          </div>
+          <div class="weather-data">
+            <div class="data" id="precipitation">Precipitation: 0%</div>
+            <div class="data" id="wind">Wind: 2 m/s</div>
+          </div>
+          <div class="info">
+            <div class="title">Weather</div>
+            <div class="weather-text">Mostly sunny</div>
           </div>
         </div>
-        <div class="weather-data">
-          <div class="data" id="precipitation">Precipitation: 0%</div>
-          <div class="data" id="humidity">Humidity: 49%</div>
-          <div class="data" id="wind">Wind: 2 m/s</div>
-        </div>
+      </div>
 
-        <div class="info">
-          <div class="title">Weather</div>
-          <div class="date">Saturday 14:00</div>
-          <div class="weather-text">Mostly sunny</div>
-        </div>
+      <div class="error-card">
+        <div class="error-text">City not found</div>
       </div>
     </main>
   </body>
