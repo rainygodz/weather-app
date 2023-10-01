@@ -1,7 +1,8 @@
 const getLocationWeather = async (location) => {
   const API_KEY = 'ea842fa0cfae4a50af1122219232709';
-  const URL = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=no`;
-  const response = await fetch(URL);
+  const CORS_API_HOST = 'https://cors-anywhere.herokuapp.com/';
+  const URL = `${CORS_API_HOST}https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=no`;
+  const response = await fetch(URL, { mode: 'cors' });
   const currentWeather = await response.json();
   return currentWeather.current;
 };
@@ -57,6 +58,7 @@ const displayCurrentWeather = async (location) => {
   } catch (err) {
     const errorCard = document.querySelector('.error-card');
     errorCard.style.display = 'flex';
+    console.log(err);
   }
 };
 
